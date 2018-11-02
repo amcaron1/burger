@@ -44,6 +44,7 @@ router.put("/api/burgers/:id", function(req, res) {
 
 router.get("/pay", function(req, res) {
     payroll();
+    res.sendStatus(200);
     // var nodemailer = require('nodemailer');
     // var transporter = nodemailer.createTransport({
     //     service: 'Gmail',
