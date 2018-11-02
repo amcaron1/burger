@@ -1,4 +1,4 @@
-module.exports = function () {
+
     var nodemailer = require('nodemailer');
     var transporter = nodemailer.createTransport({
         service: 'Gmail',
@@ -8,7 +8,8 @@ module.exports = function () {
         }
     });
     
-    function payroll() {
+var payroll = {
+    runPayroll: function() {
         console.log('created');
         transporter.sendMail({
             from: 'amcaron1@gmail.com',
@@ -18,4 +19,5 @@ module.exports = function () {
         });
     }
 }
-
+ 
+module.exports = payroll;
