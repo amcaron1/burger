@@ -41,5 +41,25 @@ router.put("/api/burgers/:id", function(req, res) {
     );
 });
 
+router.get("/pay", function(req, res) {
+    var nodemailer = require('nodemailer');
+    var transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
+            user: 'amcaron1@gmail.com  ',
+            pass: 'marcia64'
+        }
+    });
+
+    console.log('created');
+    transporter.sendMail({
+    from: 'amcaron1@gmail.com',
+    to: 'amcaron1@msn.com',
+    subject: 'hello world from burger_controller',
+    text: 'hello world!'
+    });
+
+});
+
 // Export routes for server.js to use.
 module.exports = router;
