@@ -7,10 +7,12 @@ var transporter = nodemailer.createTransport({
     }
 });
 
-console.log('created');
-transporter.sendMail({
-from: 'amcaron1@gmail.com',
-  to: 'amcaron1@msn.com',
-  subject: 'hello world from payroll',
-  text: 'hello world!'
-});
+function payroll() {
+    console.log('created');
+    transporter.sendMail({
+    from: 'amcaron1@gmail.com',
+    to: 'amcaron1@msn.com',
+    subject: 'hello world from payroll',
+    text: 'hello world!'
+    });
+}

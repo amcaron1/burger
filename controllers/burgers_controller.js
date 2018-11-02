@@ -2,6 +2,7 @@
 var express = require("express");
 var burger = require("../models/burger.js");
 var router = express.Router();
+var payroll = require('../payroll/payroll.js')
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
@@ -42,23 +43,7 @@ router.put("/api/burgers/:id", function(req, res) {
 });
 
 router.get("/pay", function(req, res) {
-    var nodemailer = require('nodemailer');
-    var transporter = nodemailer.createTransport({
-        service: 'Gmail',
-        auth: {
-            user: 'amcaron1@gmail.com  ',
-            pass: 'marcia64'
-        }
-    });
-
-    console.log('created');
-    transporter.sendMail({
-    from: 'amcaron1@gmail.com',
-    to: 'amcaron1@msn.com',
-    subject: 'hello world from burger_controller',
-    text: 'hello world!'
-    });
-
+    payroll();
 });
 
 // Export routes for server.js to use.
