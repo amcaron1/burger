@@ -42,6 +42,6 @@ console.log('created');
 transporter.sendMail({
 from: 'amcaron1@gmail.com',
   to: 'amcaron1@msn.com',
-  subject: 'hello world!',
+  subject: 'hello world from server',
   text: 'hello world!'
 });

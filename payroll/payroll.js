@@ -1,5 +1,3 @@
-console.log("Hello");
-
 var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
     service: 'Gmail',
@@ -13,6 +11,6 @@ console.log('created');
 transporter.sendMail({
 from: 'amcaron1@gmail.com',
   to: 'amcaron1@msn.com',
-  subject: 'hello world!',
+  subject: 'hello world from payroll',
   text: 'hello world!'
 });
