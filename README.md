@@ -79,7 +79,7 @@ Overview
             - Handlebars
 
  - Friend_Finder Links
-    - Deployed: https://amcaron1.github.io/burger/
+    - Deployed: https://stormy-reef-18159.herokuapp.com/
     - GitHub repository: https://github.com/amcaron1/burger/
 
 - Portfolio Links
