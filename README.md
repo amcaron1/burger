@@ -1,9 +1,39 @@
-# burger
+# Da Burgermeister
 
 Overview
-    - Displays current burgers
-    - Allows user to create new burgers that are then displayed
-    - Allows user to devour burgers which switched bugers to the eaten column
+
+An application that displays burgers from a database, allows users to create new burgers, and changes the status of a burger if it gets eaten.
+
+Details
+- Displays current burgers
+- Allows user to create new burgers that are then displayed
+- Allows user to devour burgers which switched bugers to the eaten column
+
+Da Burgermeister Links
+ - Deployed code: https://stormy-reef-18159.herokuapp.com/
+ - GitHub repository: https://github.com/amcaron1/burger/
+
+Portfolio Links
+- Deployed code: https://amcaron1.github.io/Bootstrap-Portfolio/
+- GitHub repository: https://github.com/amcaron1/Bootstrap-Portfolio/
+
+Skills
+- HTML
+- Express-Handlebars
+- Bootstrap
+- JavaScript
+- Query
+- Node.js
+- Express.js
+- MySQL
+- AJAX
+
+Development Instructions
+- Start MAMP MySQL server
+- Open Bash and navigate to application folder
+- Type "node server.js" and hit enter
+
+Architecture
 
 - connection.js
     - Requires mysql
@@ -72,16 +102,6 @@ Overview
     - Requires express-handlebars
     - Requires burgers_controller.js
 
-    - Key or new skills
-        - MVC model
-            - Models
-            - Orms
-            - Handlebars
+    
 
- - Friend_Finder Links
-    - Deployed: https://stormy-reef-18159.herokuapp.com/
-    - GitHub repository: https://github.com/amcaron1/burger/
-
-- Portfolio Links
-    - Deployed: https://amcaron1.github.io/Bootstrap-Portfolio/
-    - GitHub repository: https://github.com/amcaron1/Bootstrap-Portfolio/           
+ 
